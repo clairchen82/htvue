@@ -187,7 +187,7 @@ function gaScreenView (vcard) {
             {
               margin: 'lg',
               size: 'xxs',
-              text: '40757 台中市西屯區市政路402號7樓',
+              text: '40757 新光路測試',
               type: 'text',
               action: {
                 type: 'uri',
