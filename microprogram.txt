@@ -106,7 +106,7 @@
               },
               {
                 "type": "text",
-                "text": "Tel:${vcard.tel}",
+                "text": "Tel:${vcard.tel}${vcard.ext}",
                 "color": "#ffffff",
                 "wrap": true,
                 "size": "md",
