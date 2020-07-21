@@ -43,10 +43,8 @@
                 "weight": "bold",
                 "size": "md",
                 "align": "start",
-                "gravity": "center"
-              },
-              {
-                "type": "filler"
+                "gravity": "center",
+                "flex": 2
               }
             ]
           },
