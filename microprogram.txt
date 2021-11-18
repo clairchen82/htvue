@@ -14,15 +14,6 @@
             "text": "${vcard.name}",
             "weight": "bold",
             "size": "xl"
-          },
-          {
-            "type": "text",
-            "text": "${vcard.nickname}",
-            "weight": "bold",
-            "size": "md",
-            "flex": 2,
-            "offsetBottom": "-5px",
-            "offsetStart": "-35px"
           }
         ]
       },
