@@ -138,11 +138,11 @@
             "aspectMode": "fit"
           }
         ],
-        "width": "25%",
+        "width": "35%",
         "position": "absolute",
         "offsetEnd": "20px",
-        "offsetTop": "20px",
-        "margin": "sm"
+        "offsetTop": "10px",
+        "margin": "none"
       },
       {
         "type": "box",
