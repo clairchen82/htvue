@@ -3,26 +3,68 @@
   "size": "giga",
   "body": {
     "type": "box",
-    "layout": "horizontal",
+    "layout": "vertical",
     "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "${vcard.name}",
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "text",
+            "text": "${vcard.nickname}",
+            "weight": "bold",
+            "size": "md",
+            "flex": 2,
+            "offsetBottom": "-5px",
+            "offsetStart": "-35px"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "${vcard.depart}",
+        "size": "md",
+        "margin": "sm",
+        "weight": "bold"
+      },
+      {
+        "type": "text",
+        "text": "${vcard.com}",
+        "size": "md",
+        "margin": "md",
+        "weight": "bold"
+      },
+      {
+        "type": "text",
+        "text": "${vcard.add}",
+        "size": "md",
+        "margin": "sm",
+        "weight": "bold",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://www.google.com/maps/search/?api=1&query=賀桃關係企業?openExternalBrowser=1"
+        }
+      },
       {
         "type": "box",
         "layout": "vertical",
         "contents": [
           {
-            "type": "image",
-            "url": "https://xeee.co.place/BOO/logo2.png",
-            "size": "lg",
-            "aspectMode": "fit",
-            "aspectRatio": "15:30"
+            "type": "filler"
           }
         ],
-        "spacing": "none",
-        "offsetEnd": "10px"
+        "height": "30px"
       },
       {
         "type": "box",
-        "layout": "vertical",
+        "layout": "horizontal",
         "contents": [
           {
             "type": "box",
@@ -30,134 +72,181 @@
             "contents": [
               {
                 "type": "text",
-                "text": "${vcard.name}",
-                "color": "#FFFFFF",
+                "text": "TEL",
+                "size": "md",
                 "weight": "bold",
-                "size": "xl",
-                "align": "start"
+                "margin": "md",
+                "color": "#00a0e9"
               },
               {
                 "type": "text",
-                "text": "${vcard.depart}",
-                "color": "#FFFFFF",
-                "weight": "bold",
+                "text": "${vcard.tel} ${vcard.ext}",
                 "size": "md",
-                "align": "start",
-                "gravity": "center",
-                "flex": 2
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "${vcard.mob}",
-                "color": "#FFFFFF",
-                "size": "md",
-                "margin": "xs",
+                "margin": "md",
+                "flex": 7,
                 "action": {
                   "type": "uri",
                   "label": "action",
-                  "uri": "tel:${vcard.mob}"
+                  "uri": "tel:03-4010030,212"
                 }
+              }
+            ]
+          }
+        ],
+        "spacing": "sm",
+        "margin": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "FAX",
+                "size": "md",
+                "weight": "bold",
+                "margin": "md",
+                "color": "#00a0e9"
               },
               {
                 "type": "text",
-                "text": "LINE : ${vcard.line}",
-                "color": "#FFFFFF",
+                "text": "${vcard.fax}",
                 "size": "md",
-                "margin": "xs"
+                "margin": "md",
+                "flex": 7
+              }
+            ]
+          }
+        ],
+        "spacing": "sm",
+        "margin": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "MOB",
+                "size": "md",
+                "weight": "bold",
+                "margin": "md",
+                "color": "#00a0e9"
+              },
+              {
+                "type": "text",
+                "text": "${vcard.mob}",
+                "size": "md",
+                "margin": "md",
+                "flex": 7,
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "tel:0936863812"
+                }
+              }
+            ]
+          }
+        ],
+        "margin": "sm",
+        "spacing": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://9000.com.tw/wp-content/uploads/2017/05/9000.png",
+            "size": "xxl",
+            "aspectMode": "fit",
+            "offsetTop": "-23px",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://9000.com.tw/location/"
+            }
+          }
+        ],
+        "width": "25%",
+        "position": "absolute",
+        "offsetEnd": "20px",
+        "offsetTop": "20px",
+        "margin": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "MAIL",
+                "size": "md",
+                "weight": "bold",
+                "margin": "md",
+                "color": "#00a0e9",
+                "offsetStart": "0.5px"
               },
               {
                 "type": "text",
                 "text": "${vcard.mail}",
-                "color": "#FFFFFF",
                 "size": "md",
-                "margin": "xs",
+                "margin": "md",
+                "flex": 7,
                 "action": {
                   "type": "uri",
                   "label": "action",
-                  "uri": "mailto:${vcard.mail}"
+                  "uri": "mailto:fangyi@waterpro.com.tw"
                 }
               }
             ]
-          },
+          }
+        ],
+        "margin": "sm",
+        "spacing": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
           {
             "type": "box",
-            "layout": "vertical",
+            "layout": "horizontal",
             "contents": [
               {
                 "type": "text",
-                "text": "${vcard.com}",
-                "color": "#FFFFFF",
+                "text": "LINE",
+                "size": "md",
                 "weight": "bold",
-                "size": "lg"
+                "margin": "md",
+                "color": "#00a0e9",
+                "offsetStart": "0.5px"
               },
               {
                 "type": "text",
-                "text": "${vcard.add}",
-                "color": "#ffffff",
-                "wrap": true,
-                "size": "sm",
-                "margin": "xs"
-              },
-              {
-                "type": "text",
-                "text": "Tel:${vcard.tel}${vcard.ext}",
-                "color": "#ffffff",
-                "wrap": true,
+                "text": "${vcard.line}",
                 "size": "md",
-                "margin": "xs",
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "tel:${vcard.tel},${vcard.ext}"
-                }
-              },
-              {
-                "type": "text",
-                "text": "Fax:${vcard.fax}",
-                "color": "#ffffff",
-                "wrap": true,
-                "size": "md",
-                "margin": "xs"
-              },
-              {
-                "type": "text",
-                "text": "統一編號 : ${vcard.number}",
-                "color": "#ffffff",
-                "wrap": true,
-                "size": "md",
-                "margin": "xs"
-              },
-              {
-                "type": "text",
-                "text": "Mail:${vcard.mail}",
-                "color": "#ffffff",
-                "wrap": true,
-                "size": "md",
-                "margin": "xs",
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "mailto:${vcard.mail}"
-                }
+                "margin": "md",
+                "flex": 7
               }
-            ],
-            "margin": "xxl"
+            ]
           }
         ],
-        "spacing": "none",
-        "flex": 2
+        "margin": "sm",
+        "spacing": "sm"
       }
     ]
-  },
-  "styles": {
-    "body": {
-      "backgroundColor": "#01b0f1"
-    }
   }
 }
