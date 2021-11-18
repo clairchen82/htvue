@@ -78,37 +78,8 @@
                 "action": {
                   "type": "uri",
                   "label": "action",
-                  "uri": "tel:03-4010030,212"
+                  "uri": "tel:03-4016000,503"
                 }
-              }
-            ]
-          }
-        ],
-        "spacing": "sm",
-        "margin": "sm"
-      },
-      {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "text",
-                "text": "FAX",
-                "size": "md",
-                "weight": "bold",
-                "margin": "md",
-                "color": "#00a0e9"
-              },
-              {
-                "type": "text",
-                "text": "${vcard.fax}",
-                "size": "md",
-                "margin": "md",
-                "flex": 7
               }
             ]
           }
@@ -156,15 +127,15 @@
         "contents": [
           {
             "type": "image",
-            "url": "https://9000.com.tw/wp-content/uploads/2017/05/9000.png",
-            "size": "xxl",
-            "aspectMode": "fit",
+            "url": "https://i.imgur.com/9NWbj0V.jpg",
+            "size": "5xl",
             "offsetTop": "-23px",
             "action": {
               "type": "uri",
               "label": "action",
               "uri": "https://9000.com.tw/location/"
-            }
+            },
+            "aspectMode": "fit"
           }
         ],
         "width": "25%",
